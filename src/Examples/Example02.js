@@ -5,8 +5,10 @@ class Example02 extends Component {
         return (
             <table style={{ border: "1px solid" }}>
                 <thead>
-                    <tr>Name</tr>
-                    <tr>Job</tr>
+                    <tr>
+                        <th>Name</th>
+                        <th>Price</th>
+                    </tr>
                 </thead>
                 <tbody>
                     <tr>

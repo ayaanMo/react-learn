@@ -7,8 +7,10 @@ import React, { Component } from 'react';
 const TableHeader = () => {
     return (
         <thead>
-            <tr>Name</tr>
-            <tr>Job</tr>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+            </tr>
         </thead>
     )
 }

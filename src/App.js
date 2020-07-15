@@ -23,7 +23,7 @@ class App extends Component {
                         </div>
                     </div>
                 </div>
-                <div className='container'>
+                <div className='container-fluid'>
                     <Route exact path="/" component={Home} />
                     <Route path="/react" component={ComponentInfos} />
                 </div>

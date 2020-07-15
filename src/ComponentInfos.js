@@ -4,7 +4,7 @@ import { Example01, Example02, Example04, Example05, Example06, Example07, Examp
 class ComponentInfos extends Component {
     render() {
         return (
-            <div>
+            <div className="row">
                 <div className="col-md-2">
                     <div className="nav nav-stacked">
                         <li style={{ cursor: "pointer" }}><Link to="/react/example01">Hello,World</Link></li>
@@ -18,7 +18,6 @@ class ComponentInfos extends Component {
                         <li style={{ cursor: "pointer" }}><Link to="/react/example10">状态提升</Link></li>
                         <li style={{ cursor: "pointer" }}><Link to="/react/example11">组合VS继承</Link></li>
                         <li style={{ cursor: "pointer" }}><Link to="/react/example12">React哲学</Link></li>
-
                     </div>
                 </div>
                 <div className='col-md-10'>
