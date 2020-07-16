@@ -18,7 +18,8 @@ class App extends Component {
                             </div>
                             <div className='nav navbar-nav'>
                                 <li style={{ cursor: 'pointer' }}><Link to='/'>首页</Link></li>
-                                <li style={{ cursor: 'pointer' }}><Link to='/react'>React核心概念</Link></li>
+                                <li style={{ cursor: 'pointer' }}><Link to='/react-core-concepts'>React核心概念</Link></li>
+                                <li style={{ cursor: 'pointer' }}><Link to='/react'>React高级指引</Link></li>
                             </div>
                         </div>
                     </div>
@@ -26,7 +27,7 @@ class App extends Component {
                 <div className='container-fluid'>
                     <switch>
                         <Route exact path="/" component={Home} />
-                        <Route path="/react" component={ComponentInfos} />
+                        <Route path="/react-core-concepts" component={ComponentInfos} />
                         <Redirect to="/" />
                     </switch>
 
