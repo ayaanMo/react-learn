@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link, Route, BrowserRouter as Router, Redirect } from 'react-router-dom';
 import Home from './Home';
 import ComponentInfos from './ComponentInfos';
-
+import HOComponentInfos from './HOComponentInfo'
 class App extends Component {
     constructor(props) {
         super(props)
@@ -19,7 +19,7 @@ class App extends Component {
                             <div className='nav navbar-nav'>
                                 <li style={{ cursor: 'pointer' }}><Link to='/'>首页</Link></li>
                                 <li style={{ cursor: 'pointer' }}><Link to='/react-core-concepts'>React核心概念</Link></li>
-                                <li style={{ cursor: 'pointer' }}><Link to='/react'>React高级指引</Link></li>
+                                <li style={{ cursor: 'pointer' }}><Link to='/react-high-order'>React高级指引</Link></li>
                             </div>
                         </div>
                     </div>
@@ -28,6 +28,7 @@ class App extends Component {
                     <switch>
                         <Route exact path="/" component={Home} />
                         <Route path="/react-core-concepts" component={ComponentInfos} />
+                        <Route path="/react-high-order" component={HOComponentInfos} />
                         <Redirect to="/" />
                     </switch>
 
