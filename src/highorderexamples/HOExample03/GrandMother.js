@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import FamilyContext from './context';
+import { FamilyContext, BaseContext } from './context';
 class GrandMother extends Component {
     render() {
         return (

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import FamilyContext from './context';
+import { FamilyContext, BaseContext } from './context';
 import Daughter from './Daughter';
 class Son extends Component {
     render() {

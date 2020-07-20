@@ -1,3 +1,4 @@
 import React from 'react';
 let FamilyContext = React.createContext("黄");
-export default FamilyContext;
+let BaseContext = React.createContext({ base: "武汉", changeBase: () => { } })
+export { FamilyContext, BaseContext };

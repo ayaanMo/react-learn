@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import FamilyContext from './context';
+import { FamilyContext, BaseContext } from './context';
 import Father from './Father';
 import GrandMother from './GrandMother';
 /**
@@ -12,17 +12,24 @@ import GrandMother from './GrandMother';
 class HOExample03 extends Component {
     constructor(props) {
         super(props);
-        this.state({ name: "陈" })
+        this.changeBase = (base) => {
+            this.setState(() => ({
+                base: base
+            }))
+        }
+        this.state = { name: "陈", changeBase: this.changeBase, base: "武汉" };
     }
     render() {
-        const { name } = this.state;
+        const { name, changeBase, base } = this.state;
         return (
             <div>
                 <FamilyContext.Provider value={name}>
-                    <div style={{ border: '1px solid red', width: '30%', margin: '50px auto', textAlign: 'center' }}>
-                        <p>祖父组件定义的值:{name}老雷</p>
-                        <Father />
-                    </div>
+                    <BaseContext.Provider value={{ base: base, changeBase: changeBase }}>
+                        <div style={{ border: '1px solid red', width: '30%', margin: '50px auto', textAlign: 'center' }}>
+                            <p>祖父组件定义的值:{name}老雷,家住{base}</p>
+                            <Father />
+                        </div>
+                    </BaseContext.Provider>
                 </FamilyContext.Provider>
                 <GrandMother />
             </div>
