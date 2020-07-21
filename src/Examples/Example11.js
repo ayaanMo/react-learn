@@ -16,9 +16,6 @@ function Right() {
 }
 
 class Main extends Component {
-    constructor(props) {
-        super(props)
-    }
     render() {
         return (
             <div style={{ marginTop: this.props.marginTop }}>

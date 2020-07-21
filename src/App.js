@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
-import { Link, Route, BrowserRouter as Router, Redirect } from 'react-router-dom';
+import { Link, Route, BrowserRouter as Router, Redirect, Switch } from 'react-router-dom';
 import Home from './Home';
 import ComponentInfos from './ComponentInfos';
-import HOComponentInfos from './HOComponentInfo'
+import HOComponentInfos from './HOComponentInfo';
 class App extends Component {
-    constructor(props) {
-        super(props)
-    }
     render() {
         return (
             <Router>
@@ -25,12 +22,12 @@ class App extends Component {
                     </div>
                 </div>
                 <div className='container-fluid'>
-                    <switch>
+                    <Switch>
                         <Route exact path="/" component={Home} />
                         <Route path="/react-core-concepts" component={ComponentInfos} />
                         <Route path="/react-high-order" component={HOComponentInfos} />
                         <Redirect to="/" />
-                    </switch>
+                    </Switch>
 
                 </div>
             </Router>

@@ -21,9 +21,6 @@ export class ChildComponent extends React.PureComponent {
      * 这里继承的是PureCompoment,因为PureCompoment会帮我们实现 shouldComponentUpdate,会进行state和props的浅比较
      * 其他是跟Component是一致的
      */
-    constructor(props) {
-        super(props);
-    }
     render() {
         return (
             <div>
