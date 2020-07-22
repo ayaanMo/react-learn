@@ -7,7 +7,7 @@ class Left extends Component {
     }
     render() {
         return (
-            <div style={{ border: "1px solid red", float: "left", width: this.props.width }}>
+            <div style={{ float: "left", ...this.props.publicStyle }}>
                 我是左侧
             </div>
         );

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Link, Switch } from 'react-router-dom';
-import { Example01, Example02, Example04, Example05, Example06, Example07, Example08, Example09, Example10, Example11, Example12 } from './examples'
+import { Example01, Example02, Example04, Example05, Example06, Example07, Example08, Example09, Example10, Example11, Example12 } from './example'
 class ComponentInfos extends Component {
     render() {
         return (
