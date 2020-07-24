@@ -25,3 +25,5 @@
                  有条件地渲染元素树；
                  把样式包裹进元素树(就像在 Props Proxy(属性代理) 中的那样);
            2) 操作状态(state)
+       3.命名
+           使用HOC包裹组件的时候,会丢失原始WrappedComponent的名称，所以我们通常都会加一个displayName方便开发和调试

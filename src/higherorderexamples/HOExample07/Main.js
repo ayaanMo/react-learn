@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { withRefs } from './WrappedComponent';
 import MainChild from './MainChild';
+import MainForm from './MainForm';
 class Main extends Component {
     constructor(props) {
         super(props);
@@ -18,6 +19,7 @@ class Main extends Component {
                 </label>
                 <br />
                 <MainChild />
+                <MainForm />
             </div>
         );
     }
