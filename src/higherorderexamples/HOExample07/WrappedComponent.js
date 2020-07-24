@@ -110,14 +110,14 @@ export function withHighjacking(WrappedComponent) {
             if (selectValue === "mango") {
                 return null
             }
-            if (selectValue === "coconut") {
+            /* if (selectValue === "coconut") {
                 const elementTree = super.render();
                 let elements = _.get(elementTree, "props.children") || [];
                 if (elements.length > 0) {
                     this.findChild(_.cloneDeep(elements), "textarea", "You've been hijacked");
                     console.log(this.childElement);
                 }
-            }
+            } */
             if (selectValue === "lime") {
                 console.log(this)
                 return (
