@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { HOExample01, HOExample02, HOExample03, HOExample04, HOExample05, HOExample06, HOExample07 } from './higherorderexamples';
+import { HOExample01, HOExample02, HOExample03, HOExample04, HOExample05, HOExample06, HOExample07, HOExample08 } from './higherorderexamples';
 import { Route, Link, Switch } from 'react-router-dom';
 class HOComponentInfo extends Component {
     render() {
@@ -14,6 +14,7 @@ class HOComponentInfo extends Component {
                         <li style={{ cursor: "pointer" }}><Link to="/react-high-order/hoexample05">Refs转发</Link></li>
                         <li style={{ cursor: "pointer" }}><Link to="/react-high-order/hoexample06">Fragments</Link></li>
                         <li style={{ cursor: "pointer" }}><Link to="/react-high-order/hoexample07">高阶组件</Link></li>
+                        <li style={{ cursor: "pointer" }}><Link to="/react-high-order/hoexample08">深入JSX</Link></li>
                     </div>
                 </div>
                 <div className='col-md-10'>
@@ -25,6 +26,7 @@ class HOComponentInfo extends Component {
                         <Route path='/react-high-order/hoexample05' component={HOExample05} />
                         <Route path='/react-high-order/hoexample06' component={HOExample06} />
                         <Route path='/react-high-order/hoexample07' component={HOExample07} />
+                        <Route path='/react-high-order/hoexample08' component={HOExample08} />
                     </Switch>
                 </div>
             </div>
