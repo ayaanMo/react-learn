@@ -47,9 +47,9 @@ class Example04 extends Component {
 const Form = (props) => {
     return (
         <div>
-            <label for="name">Name</label>
+            <label htmlFor="name">Name</label>
             <input id="name" name="name" onChange={(e) => { props.onChangeInput(e) }} value={props.formValue.name} />
-            <label for="job">Job</label>
+            <label htmlFor="job">Job</label>
             <input id="job" name="job" onChange={(e) => { props.onChangeInput(e) }} value={props.formValue.job} />
             <div style={{ margin: "10px 0 0 0" }}><button onClick={() => { props.handleSubmit() }}>新增</button></div>
         </div>
