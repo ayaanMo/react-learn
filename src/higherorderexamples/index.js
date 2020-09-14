@@ -7,6 +7,7 @@ import HOExample06 from './HOExample06';
 import HOExample07 from './HOExample07';
 import HOExample08 from './HOExample08';
 import HOExample09 from './HOExample09';
+import HOExample10 from './HOExample10';
 
 export {
     HOExample01,
@@ -17,5 +18,6 @@ export {
     HOExample06,
     HOExample07,
     HOExample08,
-    HOExample09
+    HOExample09,
+    HOExample10
 };

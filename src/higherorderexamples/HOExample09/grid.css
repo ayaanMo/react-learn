@@ -1,0 +1,39 @@
+.virtualList {
+  display: table;
+  width: 100%;
+ 
+}
+
+.table-header {
+	display: table-header-group;
+	background-color: gray;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+.table-header-cell {
+	display: table-cell;
+	padding: 10px;
+	text-align: center;
+	border-bottom: 1px solid black;
+}
+
+.table-body {
+   /* display: table-row-group;  */
+   height: 500px;
+  max-height: 500px;
+  overflow:auto ;
+  position: relative;
+}
+  
+
+.table-row {
+	display: table-row;
+}
+
+.table-body-cell {
+  display: table-cell;
+  text-align: center;
+  font-size: larger;
+  border: 1px solid black;;
+}
