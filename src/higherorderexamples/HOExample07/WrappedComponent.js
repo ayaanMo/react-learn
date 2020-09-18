@@ -42,7 +42,7 @@ export function withSubscription(WrappedComponent) {
 export function withRefs(WrappedComponent) {
     class NewComponent extends Component {
         constructor(props) {
-            super();
+            super(props);
             console.log(props);
         }
         render() {

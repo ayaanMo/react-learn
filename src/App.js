@@ -3,6 +3,7 @@ import { Link, Route, BrowserRouter as Router, Redirect, Switch } from 'react-ro
 import Home from './Home';
 import ComponentInfos from './ComponentInfos';
 import HOComponentInfos from './HOComponentInfo';
+import HookComponentInfos from './HookComponentInfos';
 class App extends Component {
     render() {
         return (
@@ -17,6 +18,7 @@ class App extends Component {
                                 <li style={{ cursor: 'pointer' }}><Link to='/'>首页</Link></li>
                                 <li style={{ cursor: 'pointer' }}><Link to='/react-core-concepts'>React核心概念</Link></li>
                                 <li style={{ cursor: 'pointer' }}><Link to='/react-high-order'>React高级指引</Link></li>
+                                <li style={{ cursor: 'pointer' }}><Link to='/react-hook'>Hooks用法</Link></li>
                             </div>
                         </div>
                     </div>
@@ -26,6 +28,7 @@ class App extends Component {
                         <Route exact path="/" component={Home} />
                         <Route path="/react-core-concepts" component={ComponentInfos} />
                         <Route path="/react-high-order" component={HOComponentInfos} />
+                        <Route path="/react-hook" component={HookComponentInfos} />
                         <Redirect to="/" />
                     </Switch>
 
